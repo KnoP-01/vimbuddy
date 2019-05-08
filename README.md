@@ -1,7 +1,7 @@
 # vimbuddy
 this is a fork of https://www.vim.org/scripts/script.php?script_id=8
 
-vimbuddy.vim : Vimbuddy: An absolutely unuseful little thing
+Vimbuddy: An absolutely unuseful little thing
 
 
 created by

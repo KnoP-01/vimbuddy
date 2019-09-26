@@ -38,11 +38,11 @@ function! VimBuddy()
         let num = substitute(v:statusmsg, '^\([0-9]*\).*', '\1', '') + 0
         " How impressed should we be
         if test != "" && num > 20
-            let str = ":-O"
-        elseif test != "" && num
-            let str = ":-o"
-        else
             let str = ":-/"
+        elseif test != "" && num
+            let str = ":-|"
+        else
+            let str = ":-o"
         endif
         let s:vimbuddy_onemore = str
         return str

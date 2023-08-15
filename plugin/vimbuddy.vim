@@ -1,7 +1,7 @@
 " Description: VimBuddy statusline character
 " Author:      Flemming Madsen <vim@themadsens.dk>
-" Modified:    August 2007
-" Version:     0.9.2 mymod
+" Last Change: 15. Aug 2023
+" Version:     0.9.3 mymod
 "
 " Usage:       Insert %{VimBuddy()} into your 'statusline'
 "
@@ -20,8 +20,8 @@ function! VimBuddy()
         let s:vimbuddy_onemore = ""
     endif
 
-    if g:actual_curbuf != bufnr("%")
-        " Not my buffer, sleeping
+    if g:actual_curwin != win_getid()
+        " Not my window, sleeping
         return '|-o'
     elseif s:vimbuddy_err != v:errmsg
         let v:errmsg = v:errmsg . " "
